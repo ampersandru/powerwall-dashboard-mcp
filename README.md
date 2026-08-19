@@ -22,7 +22,7 @@ Build and run the docker container:
 
 The MCP server should be accessible by `http://<server-ip>:8765/mcp`
 
-You can add this to Hermes, OpenwebUI, Claude, etc. 
+You can add this to Hermes Agent, Open WebUI, Claude, etc. Response is only as good as the agent and model that you use! I found that openwebui did not tool call enough to get the good responses. Hermes was extremely good at tool calling and responses.
 
 **Example questions and responses** (all via Hermes with Qwen3.8-27B IQ4_KS ik_llama)
 
