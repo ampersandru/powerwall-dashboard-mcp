@@ -13,6 +13,7 @@ Edit docker-compose with your grafana location:
     nano docker-compose.yml
 ```
 Modify `INFLUX_HOST`, port and db names should likely be left alone. If you are exposing to the public, be sure to set the `MCP_AUTH_TOKEN`
+Save the file and exit (ctrl+o, ctrl+x).
 
 Build and run the docker container:
 ```bash 
@@ -20,6 +21,7 @@ Build and run the docker container:
 ```
 
 The MCP server should be accessible by `http://<server-ip>:8765/mcp`
+
 You can add this to Hermes, OpenwebUI, Claude, etc. 
 
 **Example questions and responses** (all via Hermes with Qwen3.8-27B IQ4_KS ik_llama)
