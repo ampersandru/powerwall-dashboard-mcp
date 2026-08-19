@@ -3,9 +3,12 @@ Quick and easy docker container that creates a MCP server that connects to the d
 
 **AI Disclaimer:** Yes, I used AI to create this. Use at your own risk!
 
-1. `git clone https://github.com/ampersandru/powerwall-dashboard-mcp.git`
-2. `cd powerwall-dashboard-mcp`
-3. `docker compose up -d --build`
+```bash 
+    git clone https://github.com/ampersandru/powerwall-dashboard-mcp.git
+    cd powerwall-dashboard-mcp
+    docker compose up -d --build
+```
+
 
 The MCP server should be accessible by `http://<server-ip>:8765/mcp`
 You can add this to Hermes, OpenwebUI, Claude, etc. If you are exposing to the public, be sure to set the `MCP_AUTH_TOKEN` env variable in the docker-compose
