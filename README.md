@@ -12,7 +12,7 @@ Edit docker-compose with your grafana location:
 ```bash 
     nano docker-compose.yml
 ```
-Modify `INFLUX_HOST`, port and db names should likely be left alone. If you are exposing to the public, be sure to set the `MCP_AUTH_TOKEN`
+Modify `INFLUX_HOST`, port and db names should likely be left alone. If you are exposing to the public, be sure to set the `MCP_AUTH_TOKEN`.
 Save the file and exit (ctrl+o, ctrl+x).
 
 Build and run the docker container:
