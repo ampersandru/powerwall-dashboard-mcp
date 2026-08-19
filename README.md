@@ -3,15 +3,24 @@ Quick and easy docker container that creates a MCP server that connects to the d
 
 **AI Disclaimer:** Yes, I used AI to create this. Use at your own risk!
 
+**Installation:**
 ```bash 
     git clone https://github.com/ampersandru/powerwall-dashboard-mcp.git
     cd powerwall-dashboard-mcp
+```
+Edit docker-compose with your grafana location:
+```bash 
+    nano docker-compose.yml
+```
+Modify `INFLUX_HOST`, port and db names should likely be left alone. If you are exposing to the public, be sure to set the `MCP_AUTH_TOKEN`
+
+Build and run the docker container:
+```bash 
     docker compose up -d --build
 ```
 
-
 The MCP server should be accessible by `http://<server-ip>:8765/mcp`
-You can add this to Hermes, OpenwebUI, Claude, etc. If you are exposing to the public, be sure to set the `MCP_AUTH_TOKEN` env variable in the docker-compose
+You can add this to Hermes, OpenwebUI, Claude, etc. 
 
 **Example questions and responses** (all via Hermes with Qwen3.8-27B IQ4_KS ik_llama)
 
