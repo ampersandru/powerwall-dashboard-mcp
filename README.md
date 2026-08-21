@@ -1,3 +1,21 @@
+**⚠️ DEPRECATION NOTICE: This repository is no longer active.**
+
+As of 21-AUG-2026, this MCP server has been officially integrated into the core [Powerwall Dashboard](https://github.com/jasonacox/Powerwall-Dashboard/tree/main/tools/powerwall-mcp) repository [as an optional tool](https://github.com/jasonacox/Powerwall-Dashboard/tree/main/tools/powerwall-mcp). All future development, bug fixes, and feature requests will happen there.
+
+Please use the official implementation moving forward.
+
+
+
+
+
+---------------------------------------------------------------
+
+
+
+
+
+
+
 # powerwall-dashboard-mcp
 Quick and easy docker container that creates a MCP server that connects to the default influxdb 1.8 of the [Powerwall Dashboard project](https://github.com/jasonacox/Powerwall-Dashboard). This allows you to use your AI/Agent of choice to ask it various questions about your Tesla Powerwall and/or solar system. See example questions and answers below.
 
